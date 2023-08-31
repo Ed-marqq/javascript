@@ -17,16 +17,25 @@
     </style>
 </head>
 <body>
-    <div id="area" onclick="clicar ()" onmouseenter="entrar ()" onmouseout="sair()" >
+    <div id="area" >
         interaja
 
     </div>
 
     <script>
+        var c = window.document.getElementById('area')
+        c.addEventListener('click', clicar)
+        var e = window.document.getElementById('area')
+        e.addEventListener('mouseenter', entrar)
+        
+
         function clicar (){
-            var a = window.document.getElementById('area')
-            a.innerText = 'Clicou!'
-            a.style.background = 'red'
+            var c = window.document.getElementById('area')
+            
+            c.innerText = 'Clicou!'
+            c.style.background = 'red'
+            
+            
         }
 
         function entrar (){
@@ -37,6 +46,7 @@
 
         function sair (){
             var s = window.document.getElementById('area')
+            
             s.innerText = 'Saiu!'
             s.style.background = 'green'
         }

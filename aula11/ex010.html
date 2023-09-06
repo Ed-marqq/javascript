@@ -14,12 +14,16 @@
     <script>
         function calcular(){
             var vel = window.document.querySelector('input#ivel')
+
             var res = window.document.querySelector('div#res')
+
             var vel = Number(ivel.value)
             res.innerHTML = `<p>Sua velocidade é de ${vel} Km/h</p>`
+            
             if(vel >'60'){
                 res.innerHTML+= "<p>Você está <strong>multado</strong> por excesso de velocidade</p>"
             }
+            
             res.innerHTML += `<p> Dirija sempre com cinto de segurança.</p>`
 
             

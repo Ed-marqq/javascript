@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>países</title>
+</head>
+<body>
+    <h1>Digite o seu país</h1>
+    País: <input type="text" name="pais" id="ipais">
+    <input type="button" value="Verificar" onclick="resultado()">
+    <div id="resu">
+
+    </div>
+
+    <script>
+        function resultado(){
+            
+            var res = window.document.querySelector('div#resu')
+            var pai = window.document.querySelector('input#ipais')           
+            res.innerHTML = `Você selecionou o país ${pai}` 
+        }
+    </script>
+
+    
+</body>
+</html>

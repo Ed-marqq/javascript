@@ -18,8 +18,13 @@
             
             var res = window.document.querySelector('div#resu')
             var pai = window.document.querySelector('input#ipais')           
-            res.innerHTML = `Você selecionou o país ${pai}` 
+            if(pai== 'Brasil'){
+                res.innerHTML = "<p>Você é estrangeiro</p>"
+            }
+           
+
         }
+
     </script>
 
     

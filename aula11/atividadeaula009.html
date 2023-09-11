@@ -9,18 +9,21 @@
     <h1>Digite o seu país</h1>
     País: <input type="text" name="pais" id="ipais">
     <input type="button" value="Verificar" onclick="resultado()">
-    <div id="resu">
-
-    </div>
+    <div id="res"></div>
+    
 
     <script>
         function resultado(){
+            var pai = window.document.getElementById('ipais')
+            var res = window.document.getElementById('res')
+
+            res.innerHTML = pai
             
-            var res = window.document.querySelector('div#resu')
-            var pai = window.document.querySelector('input#ipais')           
-            if(pai== 'Brasil'){
-                res.innerHTML = "<p>Você é estrangeiro</p>"
-            }
+            
+            
+
+           
+                
            
 
         }

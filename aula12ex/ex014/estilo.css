@@ -9,7 +9,7 @@ body{
 header{
     color: aliceblue;
     text-align: center;
-    margin-bottom: 15px;
+    
 
 
 }
@@ -19,6 +19,7 @@ section{
     border-radius: 10px;
     padding: 15px;
     width: 500px;
+    height: 500px;
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
 
@@ -30,7 +31,7 @@ footer{
     color: aliceblue;
     text-align:center;
     font-style: italic;
-    margin-top: 15px;
+    
 
 
 }

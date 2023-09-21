@@ -18,15 +18,20 @@ function verificar(){
             if(idade >=0 && idade < 10){
                 //criança
                 img.setAttribute('src', 'criancam.png')
+                res.innerHTML = `Detectamos criança com ${idade} anos`
+
             }else if (idade < 21){
                 //jovem
                 img.setAttribute('src', 'jovemm.png')
+                res.innerHTML = `Detectamos um jovem com ${idade} anos`
             }else if(idade < 50){
                 //adulto
                 img.setAttribute('src', 'adultom.png')
+                res.innerHTML = `Detectamos um adulto com ${idade} anos`
             }else {
                 //idoso
                 img.setAttribute('src', 'idosom.png')
+                res.innerHTML = `Detectamos um idoso com ${idade} anos`
             }
 
         }else if(fsex[1].checked){
@@ -34,19 +39,23 @@ function verificar(){
             if(idade >=0 && idade < 10){
                 //criança
                 img.setAttribute('src', 'criancaf.png')
+                res.innerHTML = `Detectamos uma criança com ${idade} anos`
             }else if (idade < 21){
                 //jovem
                 img.setAttribute('src', 'jovemf.png')
+                res.innerHTML = `Detectamos uma jovem com ${idade} anos`
             }else if(idade < 50){
                 //adulto
                 img.setAttribute('src', 'adultof.png')
+                res.innerHTML = `Detectamos um adulto com ${idade} anos`
             }else {
                 //idoso
                 img.setAttribute('src', 'idosof.png')
+                res.innerHTML = `Detectamos uma idosa com ${idade} anos`
             }
         }
         res.style.textAlign = 'center'
-        res.innerHTML = `Detectamos ${genero} com ${idade} anos`
+        //res.innerHTML = `Detectamos ${genero} com ${idade} anos`
         res.appendChild(img)
 
         
